@@ -51,9 +51,14 @@ const MoviesSchema = new mongoose.Schema(
     }
   },
   {
+
+  },
+  {
     timestamps: true,
   }
 );
+
+
 
 const Movies = mongoose.model("Movies", MoviesSchema);
 

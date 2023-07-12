@@ -1,3 +1,36 @@
-node_modules
-service-account.json
+# File konfigurasi
 database.js
+.env
+something.json
+package.json
+# Direktori dan file yang dibuat oleh alat pengembangan
+/node_modules
+/build
+/dist
+/.idea
+/.vscode
+
+# File log
+*.log
+
+# File sementara atau cadangan
+*.tmp
+*.bak
+*.swp
+
+# Ekstensi file yang sering diabaikan
+*.zip
+*.tar.gz
+*.tar
+*.rar
+
+# File kompilasi atau hasil build
+*.exe
+*.dll
+*.so
+*.class
+
+# Direktori atau file spesifik
+/cache/
+/debug.log
+/docs/*.pdf

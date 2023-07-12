@@ -101,9 +101,9 @@ router.delete("/:moviesId", async (req, res) => {
       return res.status(404).json({ error: "movies tidak ditemukan" });
     }
 
-    await moviesService.deleteMovies(moviesId);
+    await moviesService.deletemovies(moviesId);
 
-    res.json({ message: "movies berhasil dihapus" });
+    res.json({ message: "movies berhasil dihapus", movies });
   } catch (error) {
     console.error("Terjadi kesalahan", error);
     res.status(500).json({ error: "Terjadi kesalahan" });
