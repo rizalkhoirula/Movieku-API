@@ -5,9 +5,7 @@ const moviesService = require("../services/moviesService");
 const router = express.Router();
 const upload = multer();
 
-router.post(
-  "/",
-  upload.fields([{ name: "image" }, { name: "movies" }]),
+router.post( "/",  upload.fields([{ name: "image" }, { name: "movies" }]),
   async (req, res) => {
     try {
       const { nama, deskripsi, tanggal, genre } = req.body;
